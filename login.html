@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Connect - Login</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .login-box {
+            background: linear-gradient(to right, #acc3d9, #0a3f59);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 1200px;
+            text-align: left;
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        h2 {
+            color: #1f1f1f;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 500px;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 20px;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid #0a3f59;
+        }
+
+        .login-btn {
+            width: 80px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #0a3f59;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            margin-left: 215px; /* Move the button to the right */
+        }
+
+        .login-btn:hover {
+            background-color: #082d3f;
+        }
+
+        .google-btn {
+            background-color: #4285f4;
+            width: 250px;
+            padding: 10px;
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+            margin-top: 10px;
+            width: 250px;
+            padding: 10px;
+        }
+
+        .social-login button {
+            margin-bottom: 10px;
+            border:none;
+            color: white;
+            border-radius:5px;
+            font-size: 16px;
+        }
+
+        .separator {
+            margin: 20px 250px;
+            color: white;
+            font-size: 16px;
+            text-align: left; /* Align left */
+        }
+
+        .signup-text {
+            color: white;
+            margin: 20px 145px;
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: left; /* Align left */
+        }
+
+        .signup-text a {
+            color: #0a3f59;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="club_connect.png" alt="Club Connect Logo" class="logo">
+            <h2>Login To Your ccount</h2>
+            <form action="mid_sem_eval.html" method="get">
+                <label for="email">Email Address/ Phone Number</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <br>
+                <button type="submit" class="login-btn">Login</button> <!-- Separate login button -->
+            </form>
+
+            <div class="separator">or</div>
+
+            <div class="social-login">
+                <a href="signup.html"><button class="google-btn">Continue with Google</button></a>
+                <a href="signup.html"><button class="facebook-btn">Continue with Facebook</button></a>
+            </div>
+
+            <p class="signup-text">
+                Don't have an account? <a href="signup.html">Sign up now.</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

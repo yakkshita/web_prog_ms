@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enactus Club</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light background for contrast */
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .top-ribbon {
+            background-color: #375F6C; /* Color for the top ribbon */
+            height: 30px; /* Height of the ribbon */
+            width: 100%; /* Full width ribbon */
+            position: absolute; /* Stick ribbon to the top */
+            top: 0;
+        }
+        header.club-header {
+            display: flex;  /* Stack logo and name vertically */
+            align-items: left; /* Aligns logo and name to the left */
+            padding: 20px;
+        }
+        header.club-header img {
+            width: 50px; /* Logo width */
+            height: 50px; /* Logo height */
+            border-radius: 50%; /* Circular logo */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em; /* Font size for the heading */
+            font-family: 'Roboto', sans-serif; /* Font for the heading */
+            text-align: left; /* Align the heading to the left */
+            margin-top: 6px;
+            margin-left: 8px; /* Add a gap between the logo and the club name */
+        }
+        .club-info {
+            display: flex;
+            align-items: top;
+            margin: 20px;
+        }
+        .club-info img {
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            margin-top: 2px;
+        }
+        .club-description {
+            flex: 1;
+            font-size: 16px;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: center; /* Center-align buttons */
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 10px; /* Margin around buttons */
+            border: none;
+            background-color: #375F6C; /* Button color */
+            color: white; /* Button text color */
+            cursor: pointer;
+            border-radius: 5px; /* Rounded corners */
+            font-size: 1em; /* Font size for buttons */
+        }
+        .buttons button:hover {
+            background-color: #167f68; /* Darker shade on hover */
+        }
+
+        /* New style for the wrapper div */
+        .content-wrapper {
+            width: 1200px;
+            height: 520px;
+            background-color: #f1f1f1; 
+            border-radius: 20px; 
+            padding: 20px; /* Padding inside the wrapper */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for a raised effect */
+            position: fixed; /* Stay fixed in the viewport */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Align exactly to the center */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-ribbon">
+        <!-- Removed the "ACM Club Portal" text -->
+    </div>
+
+    <!-- Wrapper for all content -->
+    <div class="content-wrapper">
+        <header class="club-header">
+            <img src="enactus1.png" alt="ACM Club Logo">
+            <h1>Enactus Club</h1>
+        </header>
+
+        <section class="club-info">
+            <img src="enactus_.jpg" alt="ACM Club Image">
+            <div class="club-description">
+                <p>Enactus is an international organization that connects students, academic and
+                    business leaders through entrepreneurial-based projects that empower people to
+                    transform opportunities into real, sustainable progress for themselves and their
+                    communities. Here at BMU, it strives to do the same. This is a great learning
+                    
+                    platform for students where practicality meets theoretical knowledge. Students
+                    learn a lot in the classrooms, and this is where they can come and put out their
+                    learnings into creating something efficient and effective for the greater good of
+                    the society.
+                    Enactus BMU takes entrepreneurial action for others while using business
+                    principles and innovation to further the Global Goals and create a sustainable
+                    positive impact on people, planet, and prosperity. Empresario and
+                    Speakerporium are the flagship events conducted by the club in the past years
+                    along with many other minor events, all of them focused on societal well-being
+                    and social entrepreneurship. It will be working on more than 10 SDG’s
+                    (Sustainable Development Goals) projects in the upcoming months.</p>
+            </div>
+        </section>
+
+        <!-- Center-aligned Buttons for EC Members and Events -->
+        <div class="buttons">
+            <button onclick="location.href='ec_mem_acm.html'">EC Members</button>
+            <button onclick="location.href='events_acm.html'">Events</button>
+        </div>
+    </div>
+
+</body>
+</html>

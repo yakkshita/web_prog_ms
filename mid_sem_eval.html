@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs at BMU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            min-width: 1200px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #375F6C;
+            height: 30px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+        }
+
+        nav {
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .profile-icon img {
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            min-width: 1200px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            background-color: #375F6C;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #B1E5B3;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .dropdown-content.clubs {
+            width: 400px;
+            height: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            right: -110px;
+        }
+
+        .dropdown-content.credits {
+            width: 200px;
+            height: 100px;
+            right: -15px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+
+        .search-section {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .search-section input[type="search"] {
+            padding: 10px;
+            border-radius: 30px;
+            width: 600px;
+            height: 40px;
+            background-color: #B1E5B3;
+            border: none;
+        }
+
+        .clubs-section {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .clubs-container {
+            background: linear-gradient(180deg, #6EB8D0 0%, #6CB5CD 38%, #385E6A 69%);
+            border-radius: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .clubs-container h1 {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .clubs-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .club-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: white;
+        }
+
+        .vertical-buttons {
+            position: fixed;
+            right: 14px;
+            top: 5%;
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .join-button,
+        .event-button { /* Combined styles for both buttons */
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            transform: rotate(-90deg);
+            transform-origin: right center;
+            background-color: #375F6C;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <button class="dropbtn">Clubs</button>
+                        <div class="dropdown-content clubs">
+                            <a href="acm.html">ACM</a>
+                            <a href="adventure.html">Adventure</a>
+                            <a href="agraga.html">Agraga</a>
+                            <a href="automobile.html">Automobile</a>
+                            <a href="culinary.html">Culinary</a>
+                            <a href="enactus.html">Enactus</a>
+                            <a href="environment.html">Environment</a>
+                            <a href="finonomics.html">Finonomics</a>
+                            <a href="insights.html">Insights</a>
+                            <a href="liquid.html">Liquid</a>
+                            <a href="mrityunjay.html">Mrityunjay</a>
+                            <a href="nss.html">NSS</a>
+                            <a href="pac.html">PAC</a>
+                            <a href="pfa.html">PFA</a>
+                            <a href="robotics.html">Robotics</a>
+                            <a href="sata.html">SATA</a>
+                            <a href="savera.html">Savera</a>
+                            <a href="scimat.html">Scimat</a>
+                            <a href="sierra.html">Sierra</a>
+                            <a href="smc.html">Social Media</a>
+                            <a href="strokes.html">Strokes</a>
+                            <a href="tsec.html">TSEC</a>
+                            <a href="wnf.html">Wellness & Fight</a>
+                            <a href="yrc.html">Youth Red Cross</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="dropbtn">Credits</button>
+                        <div class="dropdown-content credits">
+                            <a href="enrichment_credits.html">Enrichment Credits</a>
+                            <a href="attendance.html">Attendance</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profile-icon">
+                <img href="pfp.png" href="Profile Icon" class="profile-icon">
+            </div>
+        </div>
+        <div class="logo-container">
+            <img href="club_connect.png" href="Club Connect Logo" class="logo">
+        </div>
+    </header>
+
+    <section class="search-section">
+        <input type="search" placeholder="Search">
+    </section>
+
+    <section class="clubs-section">
+        <div class="clubs-container">
+            <h1>CLUBS AT BMU</h1>
+            <div class="clubs-grid">
+                <a href="acm.html"><img src="acm1.png" alt="ACM Club" class="club-logo"></a>
+                <a href="adventure.html"><img src="adventure1.png" alt="Adventure Club" class="club-logo"></a>
+                <a href="agraga.html"><img src="agraga1.png" alt="Agraga Club" class="club-logo"></a>
+                <a href="automobile.html"><img src="automobile1.png" alt="Automobile Club" class="club-logo"></a>
+                <a href="culinary.html"><img src="culinary1.png" alt="Culinary Club" class="club-logo"></a>
+                <a href="enactus.html"><img src="enactus1.png" alt="Enactus Club" class="club-logo"></a>
+                <a href="environment.html"><img src="environment1.png" alt="Environment Club" class="club-logo"></a>
+                <a href="finonomics.html"><img src="finonomics1.png" alt="Finonomics Club" class="club-logo"></a>
+                <a href="insights.html"><img src="insights1.png" alt="Insights Club" class="club-logo"></a>
+                <a href="liquid.html"><img src="liquid1.png" alt="Liquid Club" class="club-logo"></a>
+                <a href="mrityunjay.html"><img src="mrityunjay1.png" alt="Mrityunjay Club" class="club-logo"></a>
+                <a href="nss.html"><img src="nss1.png" alt="NSS Club" class="club-logo"></a>
+                <a href="pac.html"><img src="pac1.png" alt="PAC Club" class="club-logo"></a>
+                <a href="pfa.html"><img src="pfa1.png" alt="PFA Club" class="club-logo"></a>
+                <a href="robotics.html"><img src="robotics1.png" alt="Robotics Club" class="club-logo"></a>
+                <a href="sata.html"><img src="sata1.png" alt="SATA Club" class="club-logo"></a>
+                <a href="savera.html"><img src="savera1.png" alt="Savera Club" class="club-logo"></a>
+                <a href="scimat.html"><img src="scimat1.png" alt="Scimat Club" class="club-logo"></a>
+                <a href="sierra.html"><img src="sierra1.png" alt="Sierra Club" class="club-logo"></a>
+                <a href="smc.html"><img src="smc1.png" alt="Social Media Club" class="club-logo"></a>
+                <a href="strokes.html"><img src="strokes1.png" alt="Strokes Club" class="club-logo"></a>
+                <a href="tsec.html"><img src="tsec1.png" alt="TSEC Club" class="club-logo"></a>
+                <a href="wnf.html"><img src="wnf1.png" alt="Wellness & Fight Club" class="club-logo"></a>
+                <a href="yrc.html"><img src="yrc1.png" alt="Youth Red Cross Club" class="club-logo"></a>
+                <!-- Add more club logos similarly -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="vertical-buttons">
+        <a href="join.html" class="join-button">
+            Join A Club
+        </a>
+        <a href="events.html" class="event-button">
+            Club Events
+        </a>
+    </section>
+</body>
+</html>
